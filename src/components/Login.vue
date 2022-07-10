@@ -38,9 +38,10 @@ const password = ref("")
         // }
        
         console.log('data object',data)
-        let response =  await axios.post('auth/login',data);   //await axios(data)
-        // console.log(response)
-        route.push('/chat-choose')
+        let {data: res} =  await axios.post('auth/login',data);   //await axios(data)
+        console.log(res)
+        localStorage.setItem('access_token', res.access_token.original.access_token)
+        router.replace('/chat-index')
         
         
     } catch (error) {

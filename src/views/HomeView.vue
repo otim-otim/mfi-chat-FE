@@ -12,12 +12,7 @@ import Login from '@/components/Login.vue'
     <router-link to="/register">
       <button>Register</button>
     </router-link>
-    <router-link to="/register">
-      <button>Register</button>
-    </router-link>
-    <router-link to="/register">
-      <button>Register</button>
-    </router-link>
+    
   </main>
 </template>
 
